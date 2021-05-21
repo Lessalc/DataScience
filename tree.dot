@@ -1,0 +1,24 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="odor <= 3.5\nsamples = 5686\nvalue = [2960, 2726]\nclass = e", fillcolor="#fdf5ef"] ;
+1 [label="odor <= 0.5\nsamples = 3227\nvalue = [2960, 267]\nclass = e", fillcolor="#e78c4b"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="samples = 183\nvalue = [0, 183]\nclass = p", fillcolor="#399de5"] ;
+1 -> 2 ;
+3 [label="spore-print-color <= 4.5\nsamples = 3044\nvalue = [2960, 84]\nclass = e", fillcolor="#e6853f"] ;
+1 -> 3 ;
+4 [label="stalk-color-below-ring <= 5.5\nsamples = 2896\nvalue = [2862, 34]\nclass = e", fillcolor="#e5823b"] ;
+3 -> 4 ;
+5 [label="samples = 2842\nvalue = [2826, 16]\nclass = e", fillcolor="#e5823a"] ;
+4 -> 5 ;
+6 [label="samples = 54\nvalue = [36, 18]\nclass = e", fillcolor="#f2c09c"] ;
+4 -> 6 ;
+7 [label="cap-color <= 1.0\nsamples = 148\nvalue = [98, 50]\nclass = e", fillcolor="#f2c19e"] ;
+3 -> 7 ;
+8 [label="samples = 98\nvalue = [98, 0]\nclass = e", fillcolor="#e58139"] ;
+7 -> 8 ;
+9 [label="samples = 50\nvalue = [0, 50]\nclass = p", fillcolor="#399de5"] ;
+7 -> 9 ;
+10 [label="samples = 2459\nvalue = [0, 2459]\nclass = p", fillcolor="#399de5"] ;
+0 -> 10 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
